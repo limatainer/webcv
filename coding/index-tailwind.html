@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS to Tailwind v4 - After</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-relaxed text-gray-800 bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="flex flex-col md:flex-row justify-between items-center p-4 md:px-8 max-w-6xl mx-auto gap-4 md:gap-0">
+            <div class="logo">
+                <h1 class="text-blue-500 text-2xl font-bold">Brand</h1>
+            </div>
+            <ul class="flex list-none gap-4 md:gap-8">
+                <li><a href="#" class="text-gray-500 font-medium hover:text-blue-500 transition-colors duration-300">Home</a></li>
+                <li><a href="#" class="text-gray-500 font-medium hover:text-blue-500 transition-colors duration-300">About</a></li>
+                <li><a href="#" class="text-gray-500 font-medium hover:text-blue-500 transition-colors duration-300">Services</a></li>
+                <li><a href="#" class="text-gray-500 font-medium hover:text-blue-500 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-24 text-center">
+        <div class="max-w-4xl mx-auto px-8">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Welcome to Our Website</h1>
+            <p class="text-xl mb-8 opacity-90">This is an example of converting traditional CSS to Tailwind CSS v4</p>
+            <button class="bg-white text-blue-500 px-8 py-3 rounded-lg text-lg font-semibold cursor-pointer transition-all duration-300 shadow-lg hover:-translate-y-1 hover:shadow-xl">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-5">
+            <h2 class="text-center text-4xl font-bold mb-12 text-gray-800">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-50 p-8 rounded-2xl text-center transition-all duration-300 border border-gray-200 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Fast Performance</h3>
+                    <p class="text-gray-500 leading-relaxed">Lightning fast loading times and optimized performance.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center transition-all duration-300 border border-gray-200 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="text-5xl mb-4">🔒</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Secure</h3>
+                    <p class="text-gray-500 leading-relaxed">Top-notch security measures to protect your data.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl text-center transition-all duration-300 border border-gray-200 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Responsive</h3>
+                    <p class="text-gray-500 leading-relaxed">Perfect display on all devices and screen sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <div class="max-w-6xl mx-auto px-5">
+            <p class="m-0">&copy; 2024 Brand. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

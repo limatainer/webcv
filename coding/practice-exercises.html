@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exercises - CSS to Tailwind</title>
+    <style>
+        /* Exercise Styles - You try to convert these to Tailwind */
+        
+        /* Exercise 1: Button Styles */
+        .exercise-1 .btn-primary {
+            background-color: #ef4444;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .exercise-1 .btn-primary:hover {
+            background-color: #450606;
+            transform: scale(1.05);
+        }
+        
+        /* Exercise 2: Card Component */
+        .exercise-2 .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        
+        .exercise-2 .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        
+        .exercise-2 .card-text {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* Exercise 3: Navigation Menu */
+        .exercise-3 .nav-menu {
+            display: flex;
+            background-color: #1f2937;
+            padding: 16px 32px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .exercise-3 .nav-brand {
+            color: #f59e0b;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .exercise-3 .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .exercise-3 .nav-link {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .exercise-3 .nav-link:hover {
+            color: white;
+        }
+        
+        /* Exercise 4: Grid Layout */
+        .exercise-4 .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .exercise-4 .grid-item {
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .exercise-4 .grid-item:hover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        
+        /* Exercise 5: Form Styling */
+        .exercise-5 .form-container {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 32px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .exercise-5 .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .exercise-5 .form-label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+        
+        .exercise-5 .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.2s ease;
+        }
+        
+        .exercise-5 .form-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .exercise-5 .form-submit {
+            width: 100%;
+            background-color: #10b981;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .exercise-5 .form-submit:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f9fafb; padding: 20px;">
+    
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h1 style="text-align: center; color: #1f2937; margin-bottom: 40px;">CSS to Tailwind Practice Exercises</h1>
+        
+        <!-- Exercise 1: Button Component -->
+        <div class="exercise-1" style="margin-bottom: 60px;">
+            <h2 style="color: #374151; margin-bottom: 20px;">Exercise 1: Convert Button Styles</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Convert the CSS styles for this button to Tailwind classes:</p>
+            <button class="btn-primary">Click Me</button>
+            
+            <details style="margin-top: 20px;">
+                <summary style="cursor: pointer; font-weight: 600; color: #3b82f6;">Show Solution</summary>
+                <pre style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 10px; overflow-x: auto;"><code>&lt;button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold cursor-pointer transition-all duration-200 hover:scale-105"&gt;Click Me&lt;/button&gt;</code></pre>
+            </details>
+        </div>
+        
+        <!-- Exercise 2: Card Component -->
+        <div class="exercise-2" style="margin-bottom: 60px;">
+            <h2 style="color: #374151; margin-bottom: 20px;">Exercise 2: Convert Card Styles</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Convert the CSS styles for this card component to Tailwind classes:</p>
+            <div class="card">
+                <h3 class="card-title">Card Title</h3>
+                <p class="card-text">This is some sample text content for the card component that needs to be styled with Tailwind.</p>
+            </div>
+            
+            <details style="margin-top: 20px;">
+                <summary style="cursor: pointer; font-weight: 600; color: #3b82f6;">Show Solution</summary>
+                <pre style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 10px; overflow-x: auto;"><code>&lt;div class="bg-white rounded-xl p-6 shadow-md max-w-md mx-auto my-5"&gt;
+  &lt;h3 class="text-2xl font-bold text-gray-800 mb-3"&gt;Card Title&lt;/h3&gt;
+  &lt;p class="text-gray-500 leading-relaxed"&gt;This is some sample text content...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </details>
+        </div>
+        
+        <!-- Exercise 3: Navigation Menu -->
+        <div class="exercise-3" style="margin-bottom: 60px;">
+            <h2 style="color: #374151; margin-bottom: 20px;">Exercise 3: Convert Navigation Styles</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Convert the CSS styles for this navigation menu to Tailwind classes:</p>
+            <nav class="nav-menu">
+                <a href="#" class="nav-brand">Brand</a>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <details style="margin-top: 20px;">
+                <summary style="cursor: pointer; font-weight: 600; color: #3b82f6;">Show Solution</summary>
+                <pre style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 10px; overflow-x: auto;"><code>&lt;nav class="flex bg-gray-800 px-8 py-4 justify-between items-center"&gt;
+  &lt;a href="#" class="text-yellow-500 text-xl font-bold no-underline"&gt;Brand&lt;/a&gt;
+  &lt;ul class="flex list-none gap-6 m-0 p-0"&gt;
+    &lt;li&gt;&lt;a href="#" class="text-gray-300 no-underline hover:text-white transition-colors duration-300"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="text-gray-300 no-underline hover:text-white transition-colors duration-300"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" class="text-gray-300 no-underline hover:text-white transition-colors duration-300"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </details>
+        </div>
+        
+        <!-- Exercise 4: Grid Layout -->
+        <div class="exercise-4" style="margin-bottom: 60px;">
+            <h2 style="color: #374151; margin-bottom: 20px;">Exercise 4: Convert Grid Layout Styles</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Convert the CSS styles for this grid layout to Tailwind classes:</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Item 1</h4>
+                    <p>Grid item content</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Item 2</h4>
+                    <p>Grid item content</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Item 3</h4>
+                    <p>Grid item content</p>
+                </div>
+            </div>
+            
+            <details style="margin-top: 20px;">
+                <summary style="cursor: pointer; font-weight: 600; color: #3b82f6;">Show Solution</summary>
+                <pre style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 10px; overflow-x: auto;"><code>&lt;div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 px-5 max-w-4xl mx-auto"&gt;
+  &lt;div class="bg-gray-100 p-5 rounded-lg text-center border-2 border-transparent hover:border-blue-500 hover:bg-blue-50 transition-all duration-300"&gt;
+    &lt;h4&gt;Item 1&lt;/h4&gt;
+    &lt;p&gt;Grid item content&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!-- Repeat for other items --&gt;
+&lt;/div&gt;</code></pre>
+            </details>
+        </div>
+        
+        <!-- Exercise 5: Form Styling -->
+        <div class="exercise-5" style="margin-bottom: 60px;">
+            <h2 style="color: #374151; margin-bottom: 20px;">Exercise 5: Convert Form Styles</h2>
+            <p style="color: #6b7280; margin-bottom: 20px;">Convert the CSS styles for this form to Tailwind classes:</p>
+            <form class="form-container">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-input" type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" type="email" id="email" name="email">
+                </div>
+                <button class="form-submit" type="submit">Submit</button>
+            </form>
+            
+            <details style="margin-top: 20px;">
+                <summary style="cursor: pointer; font-weight: 600; color: #3b82f6;">Show Solution</summary>
+                <pre style="background-color: #f3f4f6; padding: 15px; border-radius: 5px; margin-top: 10px; overflow-x: auto;"><code>&lt;form class="max-w-lg mx-auto my-10 p-8 bg-white rounded-xl shadow-lg"&gt;
+  &lt;div class="mb-5"&gt;
+    &lt;label class="block font-semibold text-gray-700 mb-2" for="name"&gt;Name&lt;/label&gt;
+    &lt;input class="w-full px-4 py-3 border-2 border-gray-300 rounded-md text-base focus:outline-none focus:border-blue-500 focus:shadow-sm transition-all duration-200" type="text" id="name" name="name"&gt;
+  &lt;/div&gt;
+  &lt;div class="mb-5"&gt;
+    &lt;label class="block font-semibold text-gray-700 mb-2" for="email"&gt;Email&lt;/label&gt;
+    &lt;input class="w-full px-4 py-3 border-2 border-gray-300 rounded-md text-base focus:outline-none focus:border-blue-500 focus:shadow-sm transition-all duration-200" type="email" id="email" name="email"&gt;
+  &lt;/div&gt;
+  &lt;button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-md text-base font-semibold cursor-pointer transition-colors duration-200" type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </details>
+        </div>
+        
+        <!-- Challenge Exercise -->
+        <div style="background-color: #fef3c7; padding: 30px; border-radius: 10px; border-left: 5px solid #f59e0b;">
+            <h2 style="color: #92400e; margin-bottom: 15px;">🏆 Challenge Exercise</h2>
+            <p style="color: #78350f; margin-bottom: 15px;"><strong>Create a complete landing page section using only Tailwind classes:</strong></p>
+            <ul style="color: #78350f; margin-left: 20px;">
+                <li>Hero section with background gradient and centered content</li>
+                <li>Responsive grid of feature cards (1 column on mobile, 3 on desktop)</li>
+                <li>Call-to-action button with hover effects</li>
+                <li>Proper spacing and typography throughout</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
