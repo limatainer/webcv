@@ -18,8 +18,6 @@
   font-display: swap;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 :root {
   --background: oklch(0.9851 0.0051 56.3628);
   --foreground: oklch(0.4114 0.0323 248.618);
